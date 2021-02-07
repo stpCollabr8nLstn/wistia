@@ -1,4 +1,3 @@
-import BodyText from "../blocks/body-text";
 import Tile from "../blocks/tile";
 import { jobs } from "../../utils/copy";
 import IconMapPin from "../icons/icon-map-pin";
@@ -17,7 +16,7 @@ const IconInfo = () => {
                     </Tile.Icon>
                 </Tile.Circle>
                 <h3>{location.heading}</h3>
-                <BodyText>{location.body}<a href="#">{location.link}</a></BodyText>
+                <p>{location.body}<a href="#">{location.link}</a></p>
             </Tile>
             <Tile>
                 <Tile.Circle backgroundColor={COLORS.PINK}>
@@ -26,7 +25,7 @@ const IconInfo = () => {
                     </Tile.Icon>
                 </Tile.Circle>
                 <h3>{values.heading}</h3>
-                <BodyText>{values.body}<a href="#">{values.link}</a></BodyText>
+                <p>{values.body}<a href="#">{values.link}</a></p>
             </Tile>
             <Tile>
                 <Tile.Circle backgroundColor={COLORS.GOLD}>
@@ -35,7 +34,7 @@ const IconInfo = () => {
                     </Tile.Icon>
                 </Tile.Circle>
                 <h3>{human.heading}</h3>
-                <BodyText>{human.body}<a href="#">{human.link}</a></BodyText>
+                <p>{human.body}<a href="#">{human.link}</a></p>
             </Tile>
             <style jsx>
                 {`
@@ -43,6 +42,11 @@ const IconInfo = () => {
                         display: flex;
                         max-width: 75%;
                         margin: 0 auto;
+                    }
+                    @media (max-width: 768px) {
+                        .IconInfo {
+                            flex-direction: column;
+                            max-width: 100%;
                     }
                 `}
             </style>

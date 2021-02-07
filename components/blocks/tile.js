@@ -9,10 +9,23 @@ const Tile  = ({ children }) => {
                     .Tile {
                         display: flex;
                         flex-direction: column;
+                        margin: 0 32px 16px;
+                        align-items: center;
                     }
                     .Tile :global(> h3) {
                         font-size: 18px;
                         font-weight: 600;
+                        padding: 12px 0;
+                        text-align: center;
+                    }
+                    .Tile :global(> p) {
+                        font-size: 16px;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                    .Tile :global(> p a) {
+                        color: ${COLORS.SKY_BLUE};
+                        text-decoration: none;
                     }
                 `}
             </style>
