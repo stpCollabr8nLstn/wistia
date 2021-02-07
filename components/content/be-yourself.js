@@ -1,8 +1,9 @@
 import LongForm from "../blocks/long-form";
 import { jobs } from "../../utils/copy";
 
+const { beYourself } = jobs;
+
 const BeYourself = () => {
-    const { beYourself } = jobs;
     return (
         <LongForm>
             <LongForm.Headline>{beYourself.heading}</LongForm.Headline>

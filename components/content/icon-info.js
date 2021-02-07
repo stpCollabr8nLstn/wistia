@@ -5,8 +5,9 @@ import IconHeart from "../icons/icon-heart";
 import IconHighFive from "../icons/icon-high-five";
 import COLORS from "../../utils/colors";
 
+const { location, values, human } = jobs;
+
 const IconInfo = () => {
-    const { location, values, human } = jobs;
     return (
         <section className="IconInfo">
             <Tile>
