@@ -41,3 +41,23 @@ We use an iterative design process that starts with simple sketches and wirefram
 ## Questions
 
 We want you to do your best work, so if you have any questions or run into problems, reach out to the hiring manager and we'll try to get you pointed in the right direction.
+
+## Write Up
+
+#### Long-term Company Thinking
+These are some notes I made along the way about decisions I made related to the company values
+
+By seperating jobs into content chunks it allows for quick modification or additions to the jobs page in the future.
+`perksData.js` allows one place to swap out perks and icons as often as needed without breaking the implementation
+#### Creativity
+Not all components were provided so I took the liberty of creating a couple component blocks
+`Accordion`
+I wanted to add a cool transition so it slides out but doing it quick means I sacrifice accessibility which is bad news bears. In a future iteration I would research the best ways to create a smooth collapse/expand transition that doesn't interfere with the content for screen readers.
+`Tile`
+`BodyText`
+#### Simplicity
+I've decided to add each section of the page under `components/content` so `pages/jobs` isn't too heavy.
+To handle the expand/collapse of the perks I used the `useContext` hook to establish state. It doesn't warrant an app-wide state so I wrapped the provider around the Perks content component only.
+#### Presentation
+`copy.js` allows devs to quickly swap copy if the message requires changing (i.e. a/b testing proves content A over content B)
+
