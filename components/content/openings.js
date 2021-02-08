@@ -35,6 +35,11 @@ const Openings = () => {
                         max-width: 50%;
                         margin: 104px auto;
                     }
+                    @media (max-width: 768px) {
+                        .Openings {
+                            max-width: 88%;
+                        }
+                    }
                 `}
             </style>
         </section>
