@@ -1,5 +1,6 @@
 import propTypes from "prop-types";
 import COLORS from "../../utils/colors";
+import DIMENSIONS from "../../utils/dimensions";
 
 const BodyText = ({ children, align }) => (
   <div>
@@ -8,7 +9,7 @@ const BodyText = ({ children, align }) => (
       {`
         .BodyText {
           color: ${COLORS.GRAY_5};
-          font-size: 21px;
+          font-size: ${DIMENSIONS.FONT_SIZES[2]};
           font-weight: 400;
           line-height: 1.5;
           margin: 25px auto 30px;

@@ -1,5 +1,6 @@
 import ClassNames from '../../utils/classnames';
 import COLORS from '../../utils/colors';
+import DIMENSIONS from "../../utils/dimensions";
 
 const List = ({ children }) => {
     return (
@@ -92,7 +93,7 @@ const ListTitle = ({ children }) => {
             {children}
             <style jsx >{`
                 .List__title {
-                    font-size: 18px;
+                    font-size: ${DIMENSIONS.FONT_SIZES[1]};
                 }
                 @media (max-width: 768px) {
                     .List__title {

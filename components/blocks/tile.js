@@ -1,5 +1,6 @@
 import ClassNames from "../../utils/classnames";
 import COLORS from "../../utils/colors";
+import DIMENSIONS from "../../utils/dimensions";
 
 const Tile  = ({ children }) => {
     return (
@@ -13,13 +14,13 @@ const Tile  = ({ children }) => {
                         align-items: center;
                     }
                     .Tile :global(> h3) {
-                        font-size: 18px;
+                        font-size: ${DIMENSIONS.FONT_SIZES[1]};
                         font-weight: 600;
                         padding: 12px 0;
                         text-align: center;
                     }
                     .Tile :global(> p) {
-                        font-size: 16px;
+                        font-size: ${DIMENSIONS.FONT_SIZES[0]};
                         line-height: 1.4;
                         text-align: center;
                     }

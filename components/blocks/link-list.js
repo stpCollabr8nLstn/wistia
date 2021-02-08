@@ -1,5 +1,6 @@
 import ClassNames from "../../utils/classnames";
 import COLORS from "../../utils/colors";
+import DIMENSIONS from "../../utils/dimensions";
 
 const LinkListItemList = ({ children }) => (
     <div className="LinkList__item-list">
@@ -17,7 +18,7 @@ const LinkListSection = ({ children }) => (
         <style jsx>
             {`
                 margin-top: 24px;
-                font-size: 21px;
+                font-size: ${DIMENSIONS.FONT_SIZES[2]};
             `}
         </style>
     </h4>)
@@ -26,7 +27,7 @@ const LinkListItem = ({ children, href }) => (
         {children}
         <style jsx>
             {`
-                font-size: 18px;
+                font-size: ${DIMENSIONS.FONT_SIZES[1]};
                 margin-top: 16px;
                 color: ${COLORS.SKY_BLUE};
                 text-decoration: none;
