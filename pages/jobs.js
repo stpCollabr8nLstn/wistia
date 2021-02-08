@@ -6,8 +6,7 @@ import PushingOurselves from "../components/content/pushing-ourselves";
 import Diversity from "../components/content/diversity";
 import Fun from "../components/content/fun";
 import Perks from "../components/content/perks";
-// import { PerksProvider } from "../context/PerksContext";
-// import Openings from "../components/content/openings";
+import Openings from "../components/content/openings";
 
 function Jobs() {
   React.useEffect(() => {
@@ -22,6 +21,7 @@ function Jobs() {
       <Diversity />
       <Fun />
       <Perks />
+      <Openings />
     </div>
   );
 }

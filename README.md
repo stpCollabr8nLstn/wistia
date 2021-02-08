@@ -10,6 +10,7 @@ Not all components were provided so I took the liberty of creating a couple comp
 `Tile`
 `BodyText`
 `TitleText`
+`LinkList`
 #### Simplicity
 I've decided to add each section of the page under `components/content` so `pages/jobs` isn't too heavy.
 To handle the expand/collapse of the perks I used the `useState` hook.

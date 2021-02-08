@@ -8,8 +8,6 @@ const TitleText = ({ children, align }) => (
       color: ${COLORS.GRAY_6};
       font-size: 32px;
       font-weight: 400;
-      margin-bottom: 50px;
-      max-width: 900px;
       text-align: ${align || "left"};
     `}</style>
   </div>

@@ -15,6 +15,7 @@ const Perks = () => {
                     const isSelected = name === selectedPerk;
                     return(
                     <List.Item 
+                        key={name}
                         isSelected={isSelected} 
                         onClick={() => {
                             if (isSelected)  return setSelectedPerk(null)
