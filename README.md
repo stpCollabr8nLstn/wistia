@@ -13,7 +13,10 @@ Not all components were provided so I took the liberty of creating a couple comp
 * `LinkList`
 #### Simplicity
 I've decided to add each section of the page under `components/content` so `pages/jobs` isn't too heavy.
+
 To handle the expand/collapse of the perks I used the `useState` hook.
 #### Presentation
 `copy.js` allows devs to quickly swap copy if the message requires changing (i.e. a/b testing proves content A over content B)
+
+I did my best to use `DIMENSIONS` in my components but found that not all font sizes worked for the given designs. 
 
