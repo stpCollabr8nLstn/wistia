@@ -2,7 +2,7 @@ import { jobs } from '../../utils/copy';
 import BodyText from '../blocks/body-text';
 import TitleText from '../blocks/title-text';
 import jobData from '../../jobs-data.json';
-import { Fragment } from 'react';
+import React from 'react';
 import LinkList from '../blocks/link-list';
 
 const { openings } = jobs;
@@ -15,7 +15,7 @@ const Openings = () => {
             {jobData.map(({ id, name, jobs }) => (
                 <LinkList key={id}>
                     {Boolean(jobs.length) && 
-                        <Fragment>
+                        <React.Fragment>
                             <LinkList.Section>
                                 {name}
                             </LinkList.Section>
@@ -24,7 +24,7 @@ const Openings = () => {
                                     <LinkList.Item key={id} href={absolute_url}>{title}</LinkList.Item>
                                 ))}
                             </LinkList.ItemList>
-                        </Fragment>
+                        </React.Fragment>
                     }
                 </LinkList>
                 
