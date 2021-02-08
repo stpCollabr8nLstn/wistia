@@ -1,5 +1,3 @@
-import ClassNames from '/browser/classes/class-names';
-
 const IconHeartBeat = props => (
   <svg
     {...props}
